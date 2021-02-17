@@ -12,22 +12,28 @@ import { APP_BASE_HREF } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { route } from './app.route';
 import { HomeComponent } from './Home/home/home.component';
+import { HomeExercicioComponent } from './home-exercicios/home/home.component'
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { CadastrarComponent } from './Crud/cadastrar/cadastrar.component';
+import { CadastrarExercicioComponent } from './Exercicios/cadastrar/cadastrar.component';
 import { EditarComponent } from './Crud/editar/editar.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { DetalhesComponent } from './Crud/detalhes/detalhes.component';
+import { DetalhesExercicioComponent } from './Exercicios/detalhes/detalhes.component';
 import { CpfPipe } from './cpf.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    HomeExercicioComponent,
     NavMenuComponent,
     EditarComponent,
     CadastrarComponent,
+    CadastrarExercicioComponent,
     FooterComponent,
     DetalhesComponent,
+    DetalhesExercicioComponent,
     CpfPipe,
   ],
   imports: [

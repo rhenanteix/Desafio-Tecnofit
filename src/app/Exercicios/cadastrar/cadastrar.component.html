@@ -1,0 +1,22 @@
+<div class="container main-container">
+<div class="col-md-10">
+<form class="form-horizontal" [formGroup]="profileForm" (ngSubmit)="OnSubmit()">
+    <div class="form-group">
+      <label>Sessoes</label>
+      <input type="number" class="form-control" formControlName="session" name="session">
+    </div>   
+      <div class="form-group">
+        <label>Tipo de Exercicios</label>
+        <select class="form-control" id="exampleFormControlSelect2" formControlName="tipo" name="tipo">
+          <option>Musculacao</option>
+          <option>Cross Fit</option>
+          <option>Danca</option>
+          <option>Aerobica</option>
+          <option>Natacao</option>
+
+        </select>
+        </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>  
+  </form> 
+</div>
+</div> 

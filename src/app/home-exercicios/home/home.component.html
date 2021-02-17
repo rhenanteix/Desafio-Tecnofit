@@ -1,0 +1,23 @@
+<h1 class="text-center">Lista de Exercicio</h1>
+    <div class="container main-container">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Tipo de Exercicio</th>
+              <th scope="col">Sessoes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let ex of exs">
+              <th scope="row">{{ex.tipo}}</th>
+              <td>{{ex.session}}</td>
+              <td></td>
+              <td>
+                <span class="editar btn btn-info" [routerLink]="['/editar/', ex.id]" routerLinkActive="router-link-active" >Editar Exercicio</span> |
+                <span class="deletar btn btn-primary" [routerLink]="['/detail', ex.id]" routerLinkActive="router-link-active" >Detalhes</span> |
+                <span class="deletar btn btn-danger" (click)="deletarPessoa(ex.id)">Excluir Exercicio</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
